@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Generator</title>
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+    <div class="main"> 
+        <nav class="navbar">
+            <div class="logo">ONLINE SIGNATURE</div>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Unicode for hamburger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">Signature Generator</a></li>
+                <li><a href="/index.html">Draw Signature</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="content">
+            <h1>Create Your Custom eSignature Online for Free</h1>
+            <p>Create your custom signature in a few easy steps using our online signature maker tool. Choose your own signature font and style to create and generate a perfect digital signature to be used for your Website, Blog, Emails, PDFs, Word Docs, Message Board, etc.</p>
+        <!-- </div> -->
+
+
+        <div class="signature-form">
+            <h2>Online Signature Maker</h2>
+            <form id="signature-form">
+                <div class="form-group">
+                    <label for="signature-name">Enter your Signature Name</label>
+                    <input type="text" id="signature-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="font">Select Font</label>
+                    <select id="font">
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Brush Script MT">Brush Script MT</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="color">Select Color</label>
+                    <input type="color" id="color-picker" value="#000000">
+                </div>
+                <div class="form-group">
+                    <label for="size">Select Size</label>
+                    <select id="size">
+                        <option value="20">Small</option>
+                        <option value="30">Medium</option>
+                        <option value="40">Large</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="slope">Select Slope</label>
+                    <select id="slope">
+                        <option value="0">None</option>
+                        <option value="-10">Slight Left</option>
+                        <option value="10">Slight Right</option>
+                    </select>
+                </div>
+                <button type="submit">Create Signature</button>
+            </form>
+        </div>
+    </div>
+        
+        <div id="signature-output"></div>
+    </div>
+
+        <script src="/about.js"> </script>
+
+</body>
+</html>

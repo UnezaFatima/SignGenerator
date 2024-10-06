@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+
+<body>
+   
+    <div class="main"> 
+    <nav class="navbar">
+        <div class="logo">ONLINE SIGNATURE</div>
+        <div class="hamburger" id="hamburger">
+            &#9776; <!-- Unicode for hamburger icon -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">Signature Generator</a></li>
+            <li><a href="/index.html">Draw Signature</a></li>
+        </ul>
+    </nav>
+
+    <header class="head">
+       <h1>Draw Your Signature Online for Free</h1>
+       <p>Create your digital signature easily using our online signature pad. Compatible with all devices including iPhone, iPad, Android phones, tablets, and computers.</p>
+    </header>
+
+    <main class="container">
+        <h2>Draw Your Signature</h2>    
+        <canvas id="signature-pad" width="803" height="303">
+        </canvas>
+
+            <div class="controls">
+                <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+                <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
+                <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+                <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+                <div class="color-option" style="background-color: #f39c12;" data-color="#f39c12"></div>
+            </div>
+
+                <div style="margin-top: 4rem;">
+                    <button id="clear-btn" class="btn">Clear Signature</button>
+                    <button id="download-btn" class="btn">Download Signature</button>
+                </div>
+            </main>
+        </div>
+
+
+        <footer class="footer">
+             <h1>Sign Documents Securely Online for Free </h1>
+            <p>The #1 eSignature Solution For Your Business</p>
+        </footer>
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
